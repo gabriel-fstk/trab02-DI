@@ -193,3 +193,34 @@ section {
     font-weight: 400;
     letter-spacing: 4px;
 }
+
+.box:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 9%;
+}
+
+.down-arrow i {
+    padding: 14px;
+    color: var(--bg-color);
+    background: var(--text-color);
+    font-size: 25px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+
+.down-arrow i:hover {
+    background: var(--main-color);
+    transform: translateY(5px);
+}
+
+body.color {
+    --text-color: #fff;
+    --bg-color: #08162a;
+    --second-color: #2b3544;
+}
