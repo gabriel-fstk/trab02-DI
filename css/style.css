@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --text-color: #000000;
+    --bg-color: none;
+    --main-color: none;
+    --second-color: none;
+    --big-font: 5.5rem;
+    --p-font: 1rem;
+}
