@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 27px 9%;
+    transition: all ease .55s;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: flex;
+    color: var(--text-color);
+    font-size: 40px;
+}
+
+.logo img {
+    width: 4.5rem;
+    height: auto;
+}
+
+.card__form-container{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.card__form-container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 5rem;
+    padding-bottom: 60px;
+}
+
+.card__form-container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.card__form-container form .inputBox{
+    margin-top: 20px;
+}
+
+.card__form-container form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.card__form-container form .inputBox input,
+.card__form-container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.card__form-container form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.card__form-container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.card__form-container form .submit-btn{
+    width: 100%;
+    background: red;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.card__form-container form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.card__form-container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.card__form-container .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, rgba(128, 128, 128, 0.938), red);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.card__form-container .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.card__form-container .card-container .front .image img{
+    height: 50px;
+}
+
+.card__form-container .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.card__form-container .card-container .front .flexbox{
+    display: flex;
+}
+
+.card__form-container .card-container .front .flexbox .box__card:nth-child(1){
+    margin-right: auto;
+}
+
+.card__form-container .card-container .front .flexbox .box__card{
+    font-size: 15px;
+    color:#fff;
+}
+
+.card__form-container .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, rgba(128, 128, 128, 0.137), red);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.card__form-container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.card__form-container .card-container .back .box__card{
+    padding: 0 20px;
+}
+
+.card__form-container .card-container .back .box__card span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.card__form-container .card-container .back .box__card .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.card__form-container .card-container .back .box__card img{
+    margin-top: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1470px) {
+    .card-container {
+        height: 700px;
+        width: 700px
+    }
+}
