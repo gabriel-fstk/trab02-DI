@@ -169,7 +169,7 @@ section, footer {
 
 .box {
     background: var(--second-color);
-    padding: 25px 40px;
+    padding: 25px 25px;
     border-radius: 1rem;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     transition: all ease .55s;
